@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error":"#ba1a1a","surface-container-highest":"#d8e3fb","on-surface-variant":"#41493e","tertiary":"#174321","on-primary-fixed-variant":"#0c5216","surface-tint":"#2a6b2c","primary":"#00450d","on-secondary-container":"#19722b","surface-container-low":"#f0f3ff","primary-fixed-dim":"#91d78a","primary-fixed":"#acf4a4","surface-dim":"#cfdaf2","inverse-on-surface":"#ecf1ff","tertiary-fixed":"#bdefbe","secondary-container":"#9cf49c","surface-variant":"#d8e3fb","tertiary-fixed-dim":"#a2d3a4","inverse-primary":"#91d78a","surface":"#f9f9ff","on-primary-fixed":"#002203","on-secondary":"#ffffff","error-container":"#ffdad6","surface-container":"#e7eeff","outline":"#717a6d","on-secondary-fixed-variant":"#005318","outline-variant":"#c0c9bb","secondary-fixed-dim":"#83da85","surface-container-high":"#dee8ff","secondary-fixed":"#9ff79f","inverse-surface":"#263143","on-tertiary-fixed-variant":"#24502c","secondary":"#126d27","surface-container-lowest":"#ffffff","surface-bright":"#f9f9ff","on-tertiary":"#ffffff","primary-container":"#1b5e20","on-surface":"#111c2d","on-primary":"#ffffff","on-primary-container":"#90d689","on-tertiary-container":"#a0d1a2","on-error-container":"#93000a","on-error":"#ffffff","on-secondary-fixed":"#002105","background":"#f9f9ff","tertiary-container":"#2f5b36","on-background":"#111c2d","on-tertiary-fixed":"#002109"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-xl":"2.5rem","margin":"2rem","gutter":"1.5rem","space-lg":"1.5rem","gutter-mobile":"1rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Logo WargaDigital RT" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0iQdU2WcNMk8szWOJhvyu622HhxaIcwRt-dHskk4rMe0MoKFpGtrAmi7zqUdh2leVwq9uMmGP_3ynxDDbDmArrxQL15KOWZ010gbrlLaUE8f1IuF-9H-Yn5UcPYGpV45Xa8wmT0vPVY9xwo0icZkX19no8dfsgz9DqeQt4Krhp39W9QUZBIIAnE0IWj3QEOUkJ7kgnWLINUM6Tq1OlOROrnbDyzuUgZdLuKSFo2wm"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">WargaDigital RT 05</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">RW 08 Kel. Sukamaju</span></div></div><div class="px-space-md py-space-sm"><div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Status Sistem</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span>Aktif</span></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Wilayah</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">RT 05 / RW 08</span></div></div></div><nav class="flex-1 px-space-sm py-space-xs flex flex-col gap-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard &amp; Demografi</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="kependudukan" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span>Database Kependudukan</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="administrasi" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Layanan Surat &amp; Tamu</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="keuangan" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Kas &amp; Iuran Warga</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="komunikasi" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span>Papan Informasi &amp; Aduan</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="umkm" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Etalase UMKM RT</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="keamanan" href="#"><span class="material-symbols-outlined text-[20px]">shield</span><span>Keamanan &amp; Kontak Darurat</span></a></nav></div><div class="p-space-md bg-surface-container-lowest"><div class="bg-secondary-container/30 rounded-xl p-space-sm flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">support_agent</span></div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Pos Ronda RT 05</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Regu Jaga Aktif</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-secondary/40" placeholder="Cari NIK, KK, Nama Warga, atau No. Rumah..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-error text-on-error font-label-md text-label-md hover:bg-error/90 transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">sos</span><span>Panic Button</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC55Cto60oMEDSsFVfiO6GQ9igqGjVTNItGR_76yvkETNxGXGubUOCwGG31Ikb5Mab9qEmdWrlqm5KgRB3U-5JeRT-HebqVOnG9Rvvrl3wg_9C9lWTaa0DTLASG2T4Uz2rba9S1yKSxJSNUVHiIRznTSeuTYVd4al2iTYNNpnIux1yN-8JqUxqLyCpRspGMw7XxuC2rhHlwxWXv1w1QORRRtnCl-DNdI929aMT7eHZ1"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Bambang S.</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Ketua RT (Admin Master)</span></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg py-space-md"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Top Banner / Command Center Alert Ribbon -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error/10 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md text-on-surface">Pusat Keamanan &amp; Siaga Bencana RT 05</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Sistem Aktif 24/7
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kordinasi komprehensif penanganan bahaya, direktori respons darurat sipil, dan otorisasi kewenangan kepengurusan RT 05 / RW 08.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span>Pos Satpam 1: <strong>Siaga (2 Petugas)</strong></span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">gate</span>
+<span>Portal Utama: <strong>Aman Terkendali</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 1: Panic Button Command Center Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: Panic Dispatch Trigger Pad -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[22px]">notification_important</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-error">Digital Panic Trigger</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Respons waktu nyata &lt; 90 dtk</span>
+</div>
+<!-- Big Emergency Actuator Area -->
+<div class="my-space-md flex flex-col items-center justify-center p-space-lg rounded-xl bg-error-container/40 relative">
+<div class="absolute inset-0 bg-radial from-error/10 via-transparent to-transparent opacity-70 pointer-events-none"></div>
+<p class="font-label-sm text-label-sm text-error uppercase mb-space-sm tracking-widest font-bold">Tekan &amp; Tahan 2 Detik</p>
+<button class="relative group w-36 h-36 rounded-full bg-error text-on-error flex flex-col items-center justify-center shadow-xl hover:scale-105 active:scale-95 transition-all duration-300" id="panicButtonMain" type="button">
+<span class="absolute -inset-2 rounded-full bg-error/30 animate-pulse group-hover:scale-110 transition-transform"></span>
+<span class="material-symbols-outlined text-[44px] mb-1" style="font-variation-settings: 'FILL' 1;">sos</span>
+<span class="font-label-md text-label-md font-bold tracking-tight">PANIC ALARM</span>
+<span class="font-label-sm text-label-sm text-on-error/80 text-[10px]">RT 05 / RW 08</span>
+</button>
+<span class="mt-space-md text-center font-body-sm text-body-sm text-on-error-container max-w-xs font-semibold">
+            Pemicu langsung menyiarkan sirene posko, notifikasi radio HT, serta broadcast darurat ke seluruh grup WhatsApp warga.
+          </span>
+</div>
+<!-- Incident Category Selectors -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<span class="font-label-md text-label-md text-on-surface">Pilih Klasifikasi Bahaya Prioritas:</span>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="category-toggle flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-8 h-8 rounded-lg bg-error text-on-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_police</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Kriminalitas / Maling</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Penyusup &amp; Curanmor</span>
+</div>
+</button>
+<button class="category-toggle flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-8 h-8 rounded-lg bg-error text-on-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Kebakaran Rumah</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Korsleting &amp; Kompor</span>
+</div>
+</button>
+<button class="category-toggle flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Kedaruratan Medis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Jantung, Kritis, Lansia</span>
+</div>
+</button>
+<button class="category-toggle flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors" type="button">
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">tsunami</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Bencana &amp; Cuaca</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pohon Roboh / Banjir</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Guard Status Card with Visual Telemetry -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Piket Patroli Ronda Malam</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/30 px-2 py-0.5 rounded-full">Shift 2 (20:00 - 04:00)</span>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="flex -space-x-3 overflow-hidden shrink-0">
+<img class="inline-block h-10 w-10 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Close up portrait of an Indonesian neighborhood night guard officer in dark navy uniform looking attentive and friendly outside civic guard booth, daylight atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ElLt5k7zX6ZyihDp9w4TOQK882sR3LYKi3ugdV-n9gkuAkheATrQud9Uah5-4gcppOgch9Gphsdsb_0-A0PAkT2qee6MSVhToiNcDuNcYWBdOJmc4vF1Zq1NUf18RY-W23-40Tip6KgnJa0I3uOUwL4YGJ1Vvgk-yi9pd3a5yd8Gu8JW6tefN3qjx6pz4JF4h705ByNrTjFUMgGiQxwuWOLriSezHK482GyURM57"/>
+<img class="inline-block h-10 w-10 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of an experienced Indonesian security personnel member smiling warmly with tactical security vest in residential perimeter setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5JPAHzW1SR4WaH8ygQdHFCxN35LVXPubVnP-LEaf_FNqo-0Qa36PZuVHKHRy8iTFgj9yBJWxZzgaVwXyOHDjDBJbxndDoTna4AlaUHXRKmtI-sK7Cp2GURUJTPWT1W2hBJDegf09s5s9ks_2M7dlvJIasdrNWCdPgatmxQFOSxA5rq0N4eb-m8IZxOYyGboQqqe9oGOZJ8RWHhQGP8d_fJZo6iClpYnhTNgK4Ibs8"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Pak Wawan &amp; Pak Sugeng</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pengecekan Terakhir: Titik Pantau Pos 2 Blok D (12 mnt lalu)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Realtime Emergency Dispatch Logs & Monitoring -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col h-full">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Log Alarm Darurat Terkini</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Riwayat pengaktifan sirine darurat dan tindakan cepat respon pengurus.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">sync</span> Live Sync
+            </span>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Incident Timeline Feed -->
+<div class="flex flex-col gap-space-md divide-y divide-surface-container-low">
+<!-- Item 1: Resolved Incident -->
+<div class="flex flex-col gap-space-xs pt-space-sm first:pt-0">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span> KONSLETING
+                </span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Rumah Bpk. Hendarto</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok B2 No. 14</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Hari ini, 03:42 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Alarm dipicu warga karena percikan api pada MCB tiang luar. Otomatis disiarkan via WhatsApp Bot ke Tim Damkar Sektor &amp; Grup Warga.
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Tertangani (Pemadaman Mandiri APAR Pos 1)
+                </span>
+<span>Respons: 4 Menit</span>
+</div>
+<button class="text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-0.5" type="button">
+                Lihat Berita Acara <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Medical Dispatch -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">emergency</span> MEDIS SIAGA
+                </span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Ibu Hj. Aminah (Lansia)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok A1 No. 03</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Kemarin, 14:15 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Permintaan evakuasi ambulans darurat sesak napas akut. Sistem mendisposisi ke Layanan Ambulans Siaga 119 dan Bidan Kelurahan.
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">task_alt</span> Ambulans Tiba &amp; Pasien Stabil di RSUD
+                </span>
+<span>Waktu Jemput: 12 Menit</span>
+</div>
+<button class="text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-0.5" type="button">
+                Lihat Berita Acara <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Suspicious Activity -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> MENCURIGAKAN
+                </span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Area Taman Belakang Blok C</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CCTV Cam 04</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">24 Okt 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Laporan kecurigaan dua orang tidak dikenal melompati pembatas pagar belakang. Petugas Satpam Regu 1 langsung merapat.
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">done</span> Klir: Teknisi Provider Internet Berizin
+                </span>
+<span>Diselesaikan: 15:10 WIB</span>
+</div>
+<button class="text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-0.5" type="button">
+                Lihat Rekaman CCTV <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Audio/Visual Alert Simulation Banner -->
+<div class="mt-auto pt-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">volume_up</span>
+<span class="font-body-sm text-body-sm text-on-surface">Sirene Pengeras Suara Terpasang di 3 Titik Wilayah RT</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">100% ONLINE</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Integrated Emergency Directory (Direktori Darurat Cepat) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">call</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Direktori Kontak Tanggap Cepat</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Akses instan panggilan darurat terintegrasi Babinsa, Bhabinkamtibmas, Rumah Sakit, dan Pemadam Kebakaran.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span> Cetak Stiker Darurat RT
+        </button>
+</div>
+</div>
+<!-- Contact Grid: Cards with Action Quick-Dials -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Contact 1: Ketua RT 05 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Pamong RT</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Siaga
+            </span>
+</div>
+<div class="flex items-center gap-space-sm my-space-xs">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-headline-md shrink-0">
+              BS
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Bpk. Bambang S.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ketua RT 05 (Pribadi &amp; Darurat)</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface text-center font-mono">
+            0812-3456-7890
+          </div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-md">
+<a class="flex-1 py-2 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-primary/90 transition-colors" href="tel:081234567890">
+<span class="material-symbols-outlined text-[16px]">call</span> Panggil
+          </a>
+<a class="p-2 rounded-lg bg-secondary-container/50 text-on-secondary-container hover:bg-secondary-container transition-colors" href="https://wa.me/6281234567890" target="_blank" title="WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" onclick="navigator.clipboard.writeText('081234567890')" title="Salin Nomor" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Contact 2: Pos Satpam Utama RT -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">Pos Jaga 24 Jam</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> HT Aktif Ch. 5
+            </span>
+</div>
+<div class="flex items-center gap-space-sm my-space-xs">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">local_police</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Pos Satpam Gerbang 1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Intercom Ext: 101 / Regu Jaga</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface text-center font-mono">
+            0813-9876-5432
+          </div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-md">
+<a class="flex-1 py-2 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-primary/90 transition-colors" href="tel:081398765432">
+<span class="material-symbols-outlined text-[16px]">call</span> Panggil
+          </a>
+<a class="p-2 rounded-lg bg-secondary-container/50 text-on-secondary-container hover:bg-secondary-container transition-colors" href="https://wa.me/6281398765432" target="_blank" title="WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" onclick="navigator.clipboard.writeText('081398765432')" title="Salin Nomor" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Contact 3: Bhabinkamtibmas & Babinsa -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">TNI / Polri Pembina</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kel. Sukamaju</span>
+</div>
+<div class="flex items-center gap-space-sm my-space-xs">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Aiptu Sudirman &amp; Serda Joko</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Bhabinkamtibmas &amp; Babinsa</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface text-center font-mono">
+            0811-2233-4455
+          </div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-md">
+<a class="flex-1 py-2 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-primary/90 transition-colors" href="tel:081122334455">
+<span class="material-symbols-outlined text-[16px]">call</span> Panggil
+          </a>
+<a class="p-2 rounded-lg bg-secondary-container/50 text-on-secondary-container hover:bg-secondary-container transition-colors" href="https://wa.me/6281122334455" target="_blank" title="WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" onclick="navigator.clipboard.writeText('081122334455')" title="Salin Nomor" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Contact 4: Polsek Setempat Call Center 110 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Kepolisian RI</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Darurat 110</span>
+</div>
+<div class="flex items-center gap-space-sm my-space-xs">
+<div class="w-12 h-12 rounded-xl bg-error/10 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">policy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Polsek Sekitar Wilayah</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">SPKT Siaga 24 Jam Bebas Pulsa</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface text-center font-mono">
+            (021) 7890-1234 / 110
+          </div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-md">
+<a class="flex-1 py-2 px-3 rounded-lg bg-error text-on-error font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-error/90 transition-colors" href="tel:110">
+<span class="material-symbols-outlined text-[16px]">call</span> Panggil 110
+          </a>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" onclick="navigator.clipboard.writeText('02178901234')" title="Salin Telepon Tetap" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Contact 5: Pemadam Kebakaran Call Center 113 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Damkar Sektor</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Darurat 113</span>
+</div>
+<div class="flex items-center gap-space-sm my-space-xs">
+<div class="w-12 h-12 rounded-xl bg-error/10 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">fire_truck</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Pos Damkar Sektor Sukamaju</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Evakuasi Api, Sarang Tawon, Ular</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface text-center font-mono">
+            (021) 5566-7788 / 113
+          </div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-md">
+<a class="flex-1 py-2 px-3 rounded-lg bg-error text-on-error font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-error/90 transition-colors" href="tel:113">
+<span class="material-symbols-outlined text-[16px]">call</span> Panggil 113
+          </a>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" onclick="navigator.clipboard.writeText('02155667788')" title="Salin Telepon Tetap" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Contact 6: IGD & Ambulans Siaga 119 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Layanan Medis</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Darurat 119</span>
+</div>
+<div class="flex items-center gap-space-sm my-space-xs">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">ambulance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">IGD RSUD &amp; Ambulans Siaga</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Jarak: 2.1 KM dari Lingkungan RT</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface text-center font-mono">
+            0821-1190-0000 / 119
+          </div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-md">
+<a class="flex-1 py-2 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 hover:bg-primary/90 transition-colors" href="tel:119">
+<span class="material-symbols-outlined text-[16px]">call</span> Panggil 119
+          </a>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" onclick="navigator.clipboard.writeText('082111900000')" title="Salin Nomor" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Role-Based Access Control (RBAC) & Governance Matrix -->
+<div class="flex flex-col gap-space-md pt-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">admin_panel_settings</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Manajemen Hak Akses Sistem &amp; Pengurus</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Prinsip tata kelola berlapis untuk menjaga integritas data kependudukan, transparansi kas, dan otoritas kedaruratan.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary/90 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span> Tambah Pengurus Baru
+        </button>
+</div>
+</div>
+<!-- Matrix Card: Clear Role Capabilities -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">unfold_more_double</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Matriks Kewenangan Peran (Role Matrix)</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Update Regulasi SK Pengurus: 2024-2027</span>
+</div>
+<!-- Overflow Horizontal Wrapper for Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Modul &amp; Kewenangan Fitur</th>
+<th class="py-3 px-3 text-center">Ketua &amp; Sekretaris</th>
+<th class="py-3 px-3 text-center">Bendahara RT</th>
+<th class="py-3 px-3 text-center">Satpam / Keamanan</th>
+<th class="py-3 px-3 text-center rounded-r-lg">Warga Terverifikasi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Database Warga &amp; Kartu Keluarga</span>
+<span class="text-on-surface-variant text-[12px]">Edit data NIK, mutasi KK, verifikasi status tinggal</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">Penuh (CRUD)</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Hanya Baca</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Buku Alamat</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Profil Sendiri</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Tanda Tangan Surat Digital &amp; Pengantar</span>
+<span class="text-on-surface-variant text-[12px]">Pengesahan e-Surat, barcode verifikasi lurah</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">Otorisasi Sah</span>
+</td>
+<td class="py-3 px-3 text-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-outline-variant">remove</span>
+</td>
+<td class="py-3 px-3 text-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-outline-variant">remove</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">Permohonan</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Buku Kas, Iuran Bulanan &amp; Bukti Bayar</span>
+<span class="text-on-surface-variant text-[12px]">Pencatatan pengeluaran, iuran sampah &amp; satpam</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Monitoring</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">Penuh (Kelola)</span>
+</td>
+<td class="py-3 px-3 text-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-outline-variant">remove</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">Bayar &amp; Unduh</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Panic Button Command &amp; Patroli Siaga</span>
+<span class="text-on-surface-variant text-[12px]">Menerima sinyal bahaya, respon sirene, patroli QR</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">Broadcast</span>
+</td>
+<td class="py-3 px-3 text-center text-on-surface-variant">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Penerima Pesan</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">Respon Utama</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Pemicu SOS</span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Papan Pengumuman &amp; Etalase UMKM Warga</span>
+<span class="text-on-surface-variant text-[12px]">Pemasangan agenda kerja bakti dan promosi produk</span>
+</div>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">Moderasi &amp; Buat</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Akses Umum</span>
+</td>
+<td class="py-3 px-3 text-center text-on-surface-variant">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Akses Umum</span>
+</td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">Unggah Produk</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Active Management Accounts & Audit Trail Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: Accounts Table with State Toggles -->
+<div class="lg:col-span-8 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Daftar Akun Pengurus &amp; Petugas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hak login resmi pengurus RT 05 periode aktif.</p>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="h-9 pl-8 pr-3 text-body-sm bg-surface-container-low rounded-lg focus:outline-none focus:ring-1 focus:ring-secondary text-on-surface" placeholder="Cari nama pengurus..." type="text"/>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-2.5 px-3 rounded-l-lg">Nama &amp; Kontak</th>
+<th class="py-2.5 px-3">Peran (Role)</th>
+<th class="py-2.5 px-3">Status Akun</th>
+<th class="py-2.5 px-3">Login Terakhir</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm">
+<!-- Account 1 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Indonesian mature civic leader smiling proudly wearing clean batik shirt inside community hall office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANjg63TjXNhPfXJMWDIuQyTHQmpl0yOgXuubQGX3Mh8rHWMbQD1p2MKDcRkX-Z24ARmPNGtMaRGkDCqdiXQ3WeofGjU_vwSwvPTYQgHTzj7CiFvIJAutSwPu0mIjDWzfbTVgiJ-KQGPLzb2LQ1DRWus3PxZxG_NZa6kuTtWG6pfbMw3wRxeJn1mnJQrhgk6GsRlIds2MhQ7s3kh-WIdZhm5BJkoPYlQWAiHxW2m3IG"/>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Bambang S.</span>
+<span class="text-on-surface-variant text-[11px] truncate">bambang.rt05@wargadigital.id</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">Ketua RT (Master)</span>
+</td>
+<td class="py-3 px-3">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-label-sm text-label-sm">5 menit lalu</td>
+<td class="py-3 px-3 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Account 2 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-label-sm shrink-0">
+                      WR
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Wahyu Ramadhan</span>
+<span class="text-on-surface-variant text-[11px] truncate">sekretariat@rt05.id</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">Sekretaris</span>
+</td>
+<td class="py-3 px-3">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-label-sm text-label-sm">2 jam lalu</td>
+<td class="py-3 px-3 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Account 3 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-sm shrink-0">
+                      SD
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Siti Daniah</span>
+<span class="text-on-surface-variant text-[11px] truncate">bendahara@rt05.id</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Bendahara</span>
+</td>
+<td class="py-3 px-3">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-label-sm text-label-sm">Kemarin 19:30</td>
+<td class="py-3 px-3 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Account 4 -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-bold text-label-sm shrink-0">
+                      WK
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-on-surface truncate">Wawan K. (Pos 1)</span>
+<span class="text-on-surface-variant text-[11px] truncate">satpam.pos1@rt05.id</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Petugas Keamanan</span>
+</td>
+<td class="py-3 px-3">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-label-sm text-label-sm">Online (Saat ini)</td>
+<td class="py-3 px-3 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Right: Security Audit Log Trail -->
+<div class="lg:col-span-4 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Audit Log Aktivitas</h3>
+<span class="material-symbols-outlined text-secondary text-[20px]">history_toggle_off</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Rekaman tidak terhapus (immutable) aksi pengurus &amp; admin.</p>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface leading-tight">Pengesahan Surat Pengantar #SP-204</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oleh Bambang S. (Ketua RT)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">09:12 WIB - IP: 182.253.xx.xx</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-fixed mt-1.5 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface leading-tight">Verifikasi Pembayaran Iuran Blok C-09</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oleh Siti Daniah (Bendahara)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">08:45 WIB - e-Kwitansi Terbit</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-error mt-1.5 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface leading-tight">Uji Coba Suara Sirene Pos 1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oleh Wawan K. (Satpam Regu 1)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">06:00 WIB - Berhasil Normal</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-surface-variant mt-1.5 shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface leading-tight">Pembaruan No. HP Darurat Puskesmas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Oleh Wahyu R. (Sekretaris)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kemarin 17:20 WIB</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md">
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span> Ekspor Log Lengkap (.CSV)
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const panicBtn = document.getElementById('panicButtonMain');
+    let pressTimer;
+
+    if (panicBtn) {
+      panicBtn.addEventListener('mousedown', () => {
+        panicBtn.classList.add('scale-95');
+        pressTimer = setTimeout(() => {
+          alert('🚨 Peringatan Darurat Terpicu! Sirene Posko RT 05 berbunyi & notifikasi serentak dikirimkan ke Satpam dan Grup WhatsApp Warga.');
+        }, 1500);
+      });
+
+      const cancelPress = () => {
+        panicBtn.classList.remove('scale-95');
+        clearTimeout(pressTimer);
+      };
+
+      panicBtn.addEventListener('mouseup', cancelPress);
+      panicBtn.addEventListener('mouseleave', cancelPress);
+
+      panicBtn.addEventListener('touchstart', (e) => {
+        panicBtn.classList.add('scale-95');
+        pressTimer = setTimeout(() => {
+          alert('🚨 Peringatan Darurat Terpicu! Sirene Posko RT 05 berbunyi & notifikasi serentak dikirimkan ke Satpam dan Grup WhatsApp Warga.');
+        }, 1500);
+      }, { passive: true });
+
+      panicBtn.addEventListener('touchend', cancelPress);
+    }
+
+    const toggles = document.querySelectorAll('.category-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggles.forEach(t => t.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-high'));
+        toggle.classList.add('ring-2', 'ring-primary', 'bg-surface-container-high');
+      });
+    });
+  })();
+</script></main></div></body></html>
